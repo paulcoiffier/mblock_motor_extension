@@ -1,10 +1,10 @@
-{	"extensionName": "Controlleur moteur",
+{	"extensionName": "Controleur moteur",
 	"sort":0,  
 	"javascriptURL":"js/motor.js", // define the path of JavaScript file
     "firmware":"1.0",  // firmware version 
     "extensionPort":0, // network port of extension, 0 for serial port
 	"blockSpecs": [ // module defining array
-		["h","Controlleur moteur","runArduino"],
+		["h","Controleur moteur","runArduino"],
 		[
 			"w",
 			"Contrôle moteur : %d.motors direction : %d.sens cycle : %d.digital vitesse : %n)",
