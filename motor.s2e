@@ -4,14 +4,13 @@
     "firmware":"1.0",  // firmware version 
     "extensionPort":0, // network port of extension, 0 for serial port
 	"blockSpecs": [ // module defining array
-		["h","Controleur moteur","runArduino"],
 		[
 			"w",
-			"Contrôle moteur : %d.motors direction : %d.sens cycle : %d.digital vitesse : %n)",
+			"Contrôle moteur : %d.motors état : %d.digital sens : %d.sens  vitesse : %n)",
 			"motor_output",
 			"1",
-			"AVANT",
-			"START",
+			"1",
+			"1",
 			"255",
 			{
 				"setup":"",
@@ -23,14 +22,14 @@
 		]
 	],
 	"menus": {
-		"digital":["START","STOP"], // menu,
+		"digital":["0","1"], // menu,
 		"motors":["1","2","3","4"], // menu
-		"sens":["AVANT","ARRIERE"], // menu
+		"sens":["0","1"], // menu
 		"digitalValues":["HIGH","LOW"], // menu,
 	},
 	"values":{ // corresponding values for "HIGH" and "LOW"
-		"START":1, 
-		"STOP":0,
+		"0":0, 
+		"1":1,
 		"AVANT":1, 
 		"ARRIERE":0
 	},
