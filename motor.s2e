@@ -16,7 +16,7 @@
 				"setup":"",
 				"inc":"#include \"motor.h\"",
 				"def":"MotorClass motor; \n",
-				"work":"motor.motor_output({0},{1},{2},{3}); \n",
+				"work":"motor.motor_output({0},{2},{1},{3}); \n",
 				"loop":""
 			}
 		]

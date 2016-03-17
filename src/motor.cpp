@@ -23,25 +23,15 @@
 #define MOTOR2_PWM 3
 #define MOTOR3_PWM 6
 #define MOTOR4_PWM 5
-#define SERVO1_PWM 10
-#define SERVO2_PWM 9
 
-// Codes for the motor function.
-#define FORWARD 1
-#define BACKWARD 2
-#define BRAKE 3
-#define RELEASE 4
 
 MotorClass::MotorClass(){
-	//pinMode(13,OUTPUT);
   level = 0;
 }
 
 
 void MotorClass::motor_output (int output, int sens, int high_low, int speed)
 {
-
-	Serial.print('Commande moteur reçue');
 
 	level = 1- level;
 
@@ -50,45 +40,45 @@ void MotorClass::motor_output (int output, int sens, int high_low, int speed)
   switch (output)
   {
   case 1:
-	if(sens==1){
+	if(sens==0){
 		output = MOTOR1_A;
 	}	
 	else {
 		output = MOTOR1_B;
 	}
-  case 11:
-    motorPWM = MOTOR1_PWM;
-    break;
+  motorPWM = MOTOR1_PWM;
+	break;
+    
   case 2:
-	if(sens==1){
+	if(sens==0){
 		output = MOTOR2_A;
 	}	
 	else {
 		output = MOTOR2_B;
 	}
-  case 22:
-    motorPWM = MOTOR2_PWM;
-    break;
+  motorPWM = MOTOR2_PWM;
+	break;
+  
   case 3:
-	if(sens==1){
+	if(sens==0){
 		output = MOTOR3_A;
 	}	
 	else {
 		output = MOTOR3_B;
 	}
-  case 33:
-    motorPWM = MOTOR3_PWM;
-    break;
+  motorPWM = MOTOR3_PWM;
+	break;
+  
   case 4:
-	if(sens==1){
+	if(sens==0){
 		output = MOTOR4_A;
 	}	
 	else {
 		output = MOTOR4_B;
 	}
-  case 44:
-    motorPWM = MOTOR4_PWM;
-    break;
+  motorPWM = MOTOR4_PWM;
+	break;
+  
   default:
     // Use speed as error flag, -3333 = invalid output.
     speed = -3333;
@@ -102,7 +92,7 @@ void MotorClass::motor_output (int output, int sens, int high_low, int speed)
     // In that case the direction will be set, but
     // not the PWM.
     shiftWrite(output, high_low);
-
+    
     // set PWM only if it is valid
     if (speed >= 0 && speed <= 255)    
     {
