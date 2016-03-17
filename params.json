@@ -1,6 +1,6 @@
 {
   "name": "Mblock motor extension",
   "tagline": "Extension pour le contrôle de moteurs avec la shield DK Electronics Arduino pour l'IDE MBlock",
-  "body": "# Extension MBlock contrôle de moteur\r\nExtension pour le contrôle de moteurs avec la shield DK Electronics Arduino pour l'IDE MBlock\r\n<br /><br />\r\nPour l'installer, importer l'extension dans son format zip (dans le dossier <strong>\"dist\"</strong> -> <strong>\"Controlleur moteur.zip\"</strong>) depuis le gestionnaire d'extensions MBlock.\r\n<br /><br />\r\n<img src=\"screenshot.png\">\r\n",
+  "body": "# Extension MBlock contrôle de moteur\r\nExtension pour le contrôle de moteurs avec la shield DK Electronics Arduino pour l'IDE MBlock\r\n<br /><br />\r\nPour l'installer, importer l'extension dans son format zip (dans le dossier <strong>\"dist\"</strong> -> <strong>\"Controlleur moteur.zip\"</strong>) depuis le gestionnaire d'extensions MBlock.\r\n<br /><br />\r\n![alt tag](http://www.mobissime.com/screenshot_mblock_motor_extension.png)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
