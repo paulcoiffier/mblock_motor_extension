@@ -1,4 +1,4 @@
-{	"extensionName": "Controleur moteur",
+{	"extensionName": "Motor controller",
 	"sort":0,  
 	"javascriptURL":"js/motor.js", // define the path of JavaScript file
     "firmware":"1.0",  // firmware version 
@@ -6,7 +6,7 @@
 	"blockSpecs": [ // module defining array
 		[
 			"w",
-			"Contrôle moteur : %d.motors état : %d.digital sens : %d.sens  vitesse : %n)",
+			"Motor controller : %d.motors state : %d.digital rotation : %d.sens  speed : %n)",
 			"motor_output",
 			"1",
 			"1",
@@ -34,12 +34,13 @@
 		"ARRIERE":0
 	},
 	"translators":{
-		"zh_CN":{ // Chinese version
-			"Controlleur moteur":"演示程序",
-			"HIGH":"高电平",
-			"LOW":"低电平",
-			"digitalWrite( %n , %d.digital )":"数字口输出( %n ,%d.digital )",
-            "blink":"闪烁"
+		"fr_FR":{ // Chinese version
+			"Motor controller":"Contrôleur moteur",
+			"Motor controller : %d.motors state : %d.digital rotation : %d.sens  speed : %n)":"Contrôleur moteur : %d.motors état : %d.digital sens : %d.sens  vitesse : %n)",
+			"moteur":"motor",
+			"state":"état",
+			"rotation":"sens",
+            "speed":"vitesse"
 		}
 	}
 }
