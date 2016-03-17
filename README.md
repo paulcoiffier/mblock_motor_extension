@@ -4,7 +4,7 @@ Extension pour le contrôle de moteurs avec la shield DK Electronics Arduino pou
 # Installation
 Téléchargez l'extension en cliquant <a href="https://github.com/paulcoiffier/mblock_motor_extension/raw/master/dist/Controleur%20moteur.zip">ICI</a>
 <br />
-Pour l'installer, importer l'extension depuis le gestionnaire d'extensions MBlock (choisir "zip file" en tant que type de fichier à ouvrir).
+Pour l'installer, ouvrez le gestionnaire d'extensions MBlock (choisir "zip file" en tant que type de fichier à ouvrir) puis sélectionnez le fichier téléchargé.
 
 # Utilisation
 Pour utiliser l'extension, glissez le bloc "Contrôle moteur" dans votre cinématique et renseignez-y les paramètres : 
