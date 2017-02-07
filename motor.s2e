@@ -1,9 +1,13 @@
-{	"extensionName": "Motor controller",
-	"sort":0,  
-	"javascriptURL":"js/motor.js", // define the path of JavaScript file
-    "firmware":"1.0",  // firmware version 
-    "extensionPort":0, // network port of extension, 0 for serial port
-	"blockSpecs": [ // module defining array
+{	"extensionName": "Controleur moteur",
+	"description": "Controler un shield moteur",
+	"version": "1.2",
+	"author": "Paul Coiffier (coiffier.paul@gmail.com)",
+	"homepage": "https://github.com/paulcoiffier/mblock_motor_extension",
+	"sort":0,
+	"javascriptURL":"js/mblock_motor_extension_shield.js",
+	"firmware":"1.0",
+	"extensionPort":0,
+	"blockSpecs": [ 
 		[
 			"w",
 			"Motor controller : %d.motors state : %d.digital rotation : %d.sens  speed : %n)",
@@ -15,26 +19,26 @@
 			{
 				"setup":"",
 				"inc":"#include \"motor.h\"",
-				"def":"MotorClass motor; \n",
+				"def":"MOTOR motor; \n",
 				"work":"motor.motor_output({0},{2},{1},{3}); \n",
 				"loop":""
 			}
 		]
 	],
 	"menus": {
-		"digital":["0","1"], // menu,
-		"motors":["1","2","3","4"], // menu
-		"sens":["0","1"], // menu
-		"digitalValues":["HIGH","LOW"], // menu,
+		"digital":["0","1"], 
+		"motors":["1","2","3","4"],
+		"sens":["0","1"], 
+		"digitalValues":["HIGH","LOW"]
 	},
-	"values":{ // corresponding values for "HIGH" and "LOW"
+	"values":{ 
 		"0":0, 
 		"1":1,
 		"AVANT":1, 
 		"ARRIERE":0
 	},
 	"translators":{
-		"fr_FR":{ // Chinese version
+		"fr_FR":{ 
 			"Motor controller":"Contrôleur moteur",
 			"Motor controller : %d.motors state : %d.digital rotation : %d.sens  speed : %n)":"Contrôleur moteur : %d.motors état : %d.digital sens : %d.sens  vitesse : %n)",
 			"moteur":"motor",
